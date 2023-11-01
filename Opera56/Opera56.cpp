@@ -13,7 +13,12 @@ public:
     int YearBorn;
     vector<int> ocenka;
     void print() {
-
+        cout << "Name:" << name << endl;
+        cout << "Age:" << GetAge() << endl;
+        for (int i = 0; i < ocenka.size(); i++) {
+            cout << ocenka[i] << " ";
+        }
+        cout << endl;
     }
 private:
     int GetAge() {
@@ -24,4 +29,18 @@ private:
 
 
 int main()
-{}
+{
+    student a;
+
+    a.name = "Hana";
+    a.ocenka.push_back(4);
+    a.ocenka.push_back(2);
+    a.ocenka.push_back(3);
+    a.ocenka.push_back(5);
+
+    a.YearBorn = 1999;
+
+    a.print();
+
+
+}
