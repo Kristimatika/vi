@@ -4,33 +4,14 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "Student.h"
 
 using namespace std;
-
-class student {
-public:
-    string name;
-    int YearBorn;
-    vector<int> ocenka;
-    void print() {
-        cout << "Name:" << name << endl;
-        cout << "Age:" << GetAge() << endl;
-        for (int i = 0; i < ocenka.size(); i++) {
-            cout << ocenka[i] << " ";
-        }
-        cout << endl;
-    }
-private:
-    int GetAge() {
-        return 2023 - YearBorn;
-    }
-};
-
 
 
 int main()
 {
-    student a;
+    Student a;
 
     a.name = "Hana";
     a.ocenka.push_back(4);
